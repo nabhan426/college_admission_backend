@@ -35,3 +35,5 @@ router.post('/register', [
 ], registerStudentDetails);
 
 module.exports = router;
+
+//sccdcls
