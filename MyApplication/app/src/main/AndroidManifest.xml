@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Addcourse_syllabus"
+            android:exported="false" />
+        <activity
+            android:name=".Addfaculty_ratio"
+            android:exported="false" />
+        <activity
+            android:name=".Addfee_structure"
+            android:exported="false" />
+        <activity
+            android:name=".Addcourse_details"
+            android:exported="false" />
+        <activity
+            android:name=".Completed"
+            android:exported="false" />
+
+        <activity
+            android:name=".Moredetails"
+            android:exported="false" />
+        <activity
+            android:name=".Collegedetails"
+            android:exported="false" />
+
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+
+        <activity
+            android:name=".Course_syllabus"
+            android:exported="false" />
+        <activity
+            android:name=".Faculty_ratio"
+            android:exported="false" />
+        <activity
+            android:name=".Fee_structure"
+            android:exported="false" />
+        <activity
+            android:name=".Course_details"
+            android:exported="false" />
+        <activity
+            android:name=".Eligible"
+            android:exported="false" />
+        <activity
+            android:name=".Personal"
+            android:exported="false" />
+        <activity
+            android:name=".Saveetha"
+            android:exported="false" />
+        <activity
+            android:name=".Homepage"
+            android:exported="false" />
+        <activity
+            android:name=".Studentdetails"
+            android:exported="false"
+            android:label="@string/title_activity_studentdetails" />
+        <activity
+            android:name=".Reset"
+            android:exported="false" />
+        <activity
+            android:name=".Signin"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
