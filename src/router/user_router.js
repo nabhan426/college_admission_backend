@@ -3,6 +3,10 @@ const { check } = require('express-validator');
 const router = express.Router();
 const { Signup, Signin, Reset } = require('../router/signing');
 const { registerStudentDetails } = require('../router/student_details');
+const {  registerNewCollege,registerCollegeDetails,ChangeCollegeDetails } = require('../router/college');
+const { GetAllColleges } = require('../router/homepage');
+
+
 
 // Signup Route
 router.post('/signup', [
@@ -25,7 +29,7 @@ router.post('/reset', [
 
 // Student Details Registration Route
 router.post('/register', [
-  check('email').isEmail().withMessage('Valid email is required'),
+  check('id').notEmpty().withMessage('Valid id is required'),
   check('name').notEmpty().withMessage('Name is required'),
   check('age').isInt({ min: 10 }).withMessage('Age must be a valid number and at least 10'),
   check('group_12th').notEmpty().withMessage('Group 12th is required'),
@@ -34,6 +38,58 @@ router.post('/register', [
   check('mobile_no').isMobilePhone().withMessage('Valid mobile number is required')
 ], registerStudentDetails);
 
+// new college
+router.post('/register_college', [
+  check('college_name')
+    .notEmpty()
+    .withMessage('College name is required')
+], registerNewCollege);
+
+
+
+// changing details for colleges
+
+router.post('/change_collegeDetails', [
+  check('college_name')
+    .notEmpty()
+    .withMessage('College name is required')
+], ChangeCollegeDetails);
+
+
+// updating college details
+
+router.post('/update_college', [
+  check('college_id')
+    .isInt()
+    .withMessage('Valid college ID is required'),
+  check('college_name')
+    .notEmpty()
+    .withMessage('College name is required'),
+  check('mark')
+    .isNumeric()
+    .optional()
+    .withMessage('Mark must be a valid number'),
+  check('batch')
+    .notEmpty()
+    .optional()
+    .withMessage('Batch is required'),
+  check('course')
+    .notEmpty()
+    .optional()
+    .withMessage('course is required'),
+  check('degree')
+    .notEmpty()
+    .optional()
+    .withMessage('Degree is required')
+], registerCollegeDetails);
+
+
+router.post('/GetAllColleges', GetAllColleges);
+
+
+
+
+
 module.exports = router;
 
-//sccdcls
+
