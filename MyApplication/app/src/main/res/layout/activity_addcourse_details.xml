@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".Addcourse_details">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="276dp"
+        android:layout_height="460dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/degreeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/greybg"
+                android:gravity="center|start"
+                android:padding="10dp"
+                android:text="Degree : "
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/textView69"
+                android:layout_width="150dp"
+                android:layout_height="41dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="-45dp"
+                android:layout_weight="1"
+                android:hint="Enter" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/degree"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="358dp"
+            android:background="@drawable/greybg"
+            android:gravity="center|start"
+            android:padding="10dp"
+            android:text="Course :"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/textView70"
+            android:layout_width="148dp"
+            android:layout_height="43dp"
+            android:layout_alignBottom="@+id/degree"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="-357dp"
+            android:hint="Enter" />
+
+        <TextView
+            android:id="@+id/batchTextView"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="170dp"
+            android:layout_marginBottom="298dp"
+            android:background="@drawable/greybg"
+            android:gravity="center|start"
+            android:padding="10dp"
+            android:text="Batch :                                                       "
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+        <EditText
+            android:id="@+id/textView72"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/degree"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="-194dp"
+            android:hint="Enter" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="225dp"
+            android:background="@drawable/greybg"
+            android:gravity="center|start"
+            android:padding="10dp"
+            android:text="Core subjects :"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="174dp"
+            android:layout_marginBottom="166dp"
+            android:background="@drawable/greybg"
+            android:gravity="center|start"
+            android:padding="10dp"
+            android:text="Electives :"
+
+            android:textColor="@color/black"
+
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="116dp"
+            android:layout_height="62dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="81dp"
+            android:background="@drawable/greybg"
+            android:gravity="center|start"
+            android:padding="10dp"
+            android:text="Professional certificate:"
+
+            android:textColor="@color/black"
+
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/greybg"
+            android:gravity="center|start"
+            android:padding="10dp"
+            android:text="Conferences:"
+
+            android:textColor="@color/black"
+
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/textView71"
+            android:layout_width="159dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginBottom="81dp"
+            android:hint="Enter" />
+
+        <EditText
+            android:id="@+id/textView74"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/degree"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="-135dp"
+            android:hint="Enter" />
+
+        <EditText
+            android:id="@+id/textView75"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/degree"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="-61dp"
+            android:hint="Enter" />
+
+        <EditText
+            android:id="@+id/textView73"
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="355dp"
+            android:hint="Enter" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="43dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:onClick="moredetails"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074"
+        app:srcCompat="@drawable/chevronback" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:text="          ADD COURSE DETAILS :"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.178" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/btn_shape"
+        android:onClick="completed"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
